@@ -1,11 +1,13 @@
 from random import randint
 
-score = {"computer": 0, "player": 0}
+import os
 
-
-class Board
-
-    def __init__(self, size, num_ships name, type):
-        self.size = size
-        self.board = [["." for x in range(size)] for y in range(size)]
-        
+class Board:
+    def __init__(self.board):
+        self.board = board
+"""
+Below function converts numbers to letters when displaying the columns
+"""
+    def get_letters_to_numbers():
+        letters_to_numbers = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
+        return letters_to_numbers
