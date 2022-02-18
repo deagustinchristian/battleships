@@ -16,7 +16,7 @@ Below function converts numbers to letters when displaying the columns
         print("  A B C D E")
         row_number = 1
         for row in self.board:
-            print("row_number, ".".join(row))")
+            print((row_number, ".".join(row)))
             row_number += 1
 
 class Ships:
@@ -52,6 +52,11 @@ column letter A-E
                 y_column = input("Enter the column letter of the ship: ").upper()
             return int(x_row) - 1, Board.get_letters_to_numbers()[y_column]
         except ValueError and KeyError:
-            print("Not a valid input")
+            print("Not a valid input")            
             return self.get_player_input()
     
+#Make function to count hits
+
+#run game function, check winner, missles left etc
+
+#need to go to work now
