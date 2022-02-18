@@ -28,7 +28,7 @@ class Ships:
   """
   def create_ships(self):
     for i in range(6):
-      self.x_row, self.y_column = random.randint(0, 4), random.randint(0, 4)
+      self.x_row, self.y_column = random.randint(0, 4), random.randint(0, 4) # we use 0 because zero indexing
       while self.board[self.x_row][self.y_column] == "X":
         self.x_row, self.y_column = random.randint(0, 4), random.randint(0, 4)
       self.board[self.x_row][self.y_column] = "X"
@@ -45,7 +45,7 @@ class Ships:
           print("Not a valid choice, please choose 1, 2, 3, 4, or 5")
           x_row = input("Enter the row of the ship: ")
 
-      y_column = input("Enter the column letter of the ship: ").upper()
+      y_column = input("Enter the column letter of the ship: ").upper() #.upper makes it possible to allow player to input lower case letters, a-e
       while y_column not in "ABCDE":
           print("Not a valid choice, please choose A, B, C, D, or E")
           y_column = input("Enter the column letter of the ship: ").upper()
@@ -74,7 +74,7 @@ def new_game():
 
     #Gets the player input and checks so not duplicate
     player_x_row, player_y_column = Ships.get_player_input(object)
-    
+
     while player_guess_board.board[player_x_row][player_y_column] == "-" or player_guess_board.board[player_x_row][player_y_column] == "X":
       print("You tried this one already!")
       player_x_row, player_y_column = Ships.get_player_input(object)
