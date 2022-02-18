@@ -15,8 +15,8 @@ Below function converts numbers to letters when displaying the columns
     def print_board(self):
         print("  A B C D E")
         row_number = 1
-        for row in self.board:
-            print((row_number, ".".join(row)))
+        for row in board:
+            print("%d|%s|" % (row_number, "|".join(row))) # This idea i got from dmoisset, see README
             row_number += 1
 
 class Ships:
