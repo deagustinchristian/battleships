@@ -23,7 +23,7 @@ class Ships:
     def __init__(self, board):
         self.board = board
 """
-Below function places 6 ships randomly on the board and checks 
+Below function places the computers 6 ships randomly on the board and checks 
 if there is already a ship placed, 
 if so it continues to look until it finds a free spot
 """
@@ -43,20 +43,27 @@ column letter A-E
         try:
             x_row = input("Enter the row of the ship: ")
             while x_row not in "12345":
-                print("Not a valid choice, please select a valid row")
+                print("Not a valid choice, please choose 1, 2, 3, 4, or 5")
                 x_row = input("Enter the row of the ship: ")
 
             y_column = input("Enter the column letter of the ship: ").upper()
             while y_column not in "ABCDE":
-                print("Not a valid choice, please select a valid column")
+                print("Not a valid choice, please choose A, B, C, D, or E")
                 y_column = input("Enter the column letter of the ship: ").upper()
             return int(x_row) - 1, Board.get_letters_to_numbers()[y_column]
         except ValueError and KeyError:
             print("Not a valid input")            
             return self.get_player_input()
     
-#Make function to count hits
+    def sunk_ships(self):
+        sunk_ships = 0
+        for row in self.board:
+          for column in row:
+            if column == "X":
+              sunk_ships += 1
+        return sunk_ships
 
-#run game function, check winner, missles left etc
+def new_game():
+
 
 #need to go to work now
