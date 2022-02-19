@@ -46,16 +46,16 @@ class Ships:
     # restrict to one character/number test abcde 12345
     def get_player_input(self):
         try:
-            x_row = input("Enter the row of the ship: ")
+            x_row = input("Enter the row of the ship: \n")
             while x_row not in "12345":
                 print("Not a valid choice, please choose 1, 2, 3, 4, or 5")
-                x_row = input("Enter the row of the ship: ")
+                x_row = input("Enter the row of the ship: \n")
             # .upper makes it possible to allow 
             # player to input lower case letters, a-e
-            y_column = input("Enter the column letter of the ship: ").upper()
+            y_column = input("Enter the column letter of the ship: \n").upper()
             while y_column not in "ABCDE":
                 print("Not a valid choice, please choose A, B, C, D, or E")
-                y_column = input("Enter the column letter of the ship: ").upper()
+                y_column = input("Enter the column letter of the ship: \n").upper()
             return int(x_row) - 1, Board.get_letters_to_numbers()[y_column]
         except ValueError and KeyError:
             print("Not a valid input")            
