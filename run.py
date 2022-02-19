@@ -38,6 +38,7 @@ class Ships:
   it checks so that the player enters a valid row number between 1-5 and a 
   column letter A-E 
   """
+  #fix input validation, blank input!!! restrict to one character/number test abcde 12345
   def get_player_input(self):
     try:
       x_row = input("Enter the row of the ship: ")
@@ -46,7 +47,7 @@ class Ships:
           x_row = input("Enter the row of the ship: ")
 
       y_column = input("Enter the column letter of the ship: ").upper() #.upper makes it possible to allow player to input lower case letters, a-e
-      while y_column not in "ABCDE":
+      while y_column not in "ABCDE" and y_column.len() == 1:
           print("Not a valid choice, please choose A, B, C, D, or E")
           y_column = input("Enter the column letter of the ship: ").upper()
       return int(x_row) - 1, Board.get_letters_to_numbers()[y_column]
@@ -66,6 +67,10 @@ def new_game():
   computer_board = Board([[" "] * 5 for i in range(5)])
   player_guess_board = Board([[" "] * 5 for i in range(5)])
   Ships.create_ships(computer_board)
+
+#add welcome text, board size, amount of missiles,
+
+
 
   #starts game with 15 missiles
   missiles = 15
