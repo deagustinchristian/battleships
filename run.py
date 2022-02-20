@@ -75,12 +75,15 @@ def new_game():
     player_guess_board = Board([[" "] * 5 for i in range(5)])
     Ships.create_ships(computer_board)
 
-    # add welcome text, board size, amount of missiles,
-
-
-
-    # starts game with 15 missiles
     missiles = 15
+    num_ships = 6
+    print("≈" * 50)
+    print("Welcome to Battleships!")
+    print(f"Amount of missiles: {missiles}. Number of enemy ships: {num_ships}")
+    print("Happy hunting!")
+    print("≈" * 50)
+    # starts game with 15 missiles
+    
     while missiles > 0:
         Board.print_board(player_guess_board)
 
@@ -109,5 +112,6 @@ def new_game():
                 print("You ran out of missiles, the bad guys got away!")
                 Board.print_board(player_guess_board)
                 break
+
 
 new_game()
