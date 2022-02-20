@@ -17,7 +17,7 @@ class Board:
         print("  A B C D E")
         row_number = 1
         for row in self.board:
-            print("%d|%s|" % (row_number, "|".join(row)))  
+            print("%d|%s|" % (row_number, "|".join(row)))
             row_number += 1
 
 
@@ -39,10 +39,10 @@ class Ships:
         return self.board
     """
     Below function asks the player to enter a row and a column,
-    it checks so that the player enters a valid row number between 1-5 and a 
-    column letter A-E 
+    it checks so that the player enters a valid row number between 1-5 and a
+    column letter A-E
     """
-    # fix input validation, blank input!!! 
+    # fix input validation, blank input!!!
     # restrict to one character/number test abcde 12345
     def get_player_input(self):
         try:
@@ -50,7 +50,7 @@ class Ships:
             while x_row not in "12345":
                 print("Not a valid choice, please choose 1, 2, 3, 4, or 5")
                 x_row = input("Enter the row of the ship: \n")
-            # .upper makes it possible to allow 
+            # .upper makes it possible to allow
             # player to input lower case letters, a-e
             y_column = input("Enter the column letter of the ship: \n").upper()
             while y_column not in "ABCDE":
@@ -58,9 +58,9 @@ class Ships:
                 y_column = input("Enter the column letter of the ship: \n").upper()
             return int(x_row) - 1, Board.get_letters_to_numbers()[y_column]
         except ValueError and KeyError:
-            print("Not a valid input")            
+            print("Not a valid input")
             return self.get_player_input()
-    
+
     def sunk_ships(self):
         sunk_ships = 0
         for row in self.board:
@@ -82,8 +82,7 @@ def new_game():
     print(f"Amount of missiles: {missiles}. Number of enemy ships: {num_ships}")
     print("Happy hunting!")
     print("≈" * 50)
-    # starts game with 15 missiles
-    
+
     while missiles > 0:
         Board.print_board(player_guess_board)
 
