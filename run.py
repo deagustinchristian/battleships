@@ -116,5 +116,10 @@ def new_game():
                 Board.print_board(player_guess_board)
                 break
 
+    restart = input("Do you want to try again? ("Y/N")")
+    if restart == "Y":
+        new_game()
+    else:
+        print("Thanks for playing!")
 
 new_game()
