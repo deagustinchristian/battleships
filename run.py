@@ -58,7 +58,7 @@ class Ships:
             while y_column not in "ABCDE":
                 print("Not a valid choice, please choose A, B, C, D, or E")
                 y_column = (input("Enter the column letter of the ship: \n")
-                                  .upper())
+                            .upper())
             return int(x_row) - 1, Board.get_letters_to_numbers()[y_column]
         except ValueError and KeyError:
             print("Not a valid input")
@@ -80,11 +80,12 @@ def new_game():
 
     missiles = 15
     num_ships = 6
-    print("≈" * 50)
+    print("≈" * 30)
     print("Welcome to Battleships!")
-    print((f"Amount of missiles: {missiles}. Number of enemy ships: {num_ships}"))
+    print(f"Amount of missiles: {missiles}")
+    print(f"Number of enemy ships: {num_ships}")
     print("Happy hunting!")
-    print("≈" * 50)
+    print("≈" * 30)
 
     while missiles > 0:
         Board.print_board(player_guess_board)
