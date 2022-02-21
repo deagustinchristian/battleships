@@ -2,21 +2,30 @@
 
 Battleships is a Python terminal game, which runs via my mock terminal on Heroku.
 
-Players can try to beat the computer by destroying the computers battleships before running out of missiles. Players start with 15 missiles and the computer has randomly placed 6 battleships. Each battleship occupies one square on the board.
+Players can try to beat the computer by destroying the computer's battleships before running out of missiles. Players start with 15 missiles and the computer has randomly placed 6 battleships. Each battleship occupies one square on the board.
 
 [Here is the live version of my game](https://cda-battleships.herokuapp.com/)
 
 ![Looking good on different devices](https://raw.githubusercontent.com/deagustinchristian/battleships/main/assets/images/terminal.png)
 
+## How to Play
+
+My version of Battleships is a bit different from the original pen-and-paper game. In this version, the players objective is to destroy the computers randomly placed battleships.
+
+A hit is marked with an X and a miss is marked with an -. The player starts with 15 missiles and the computer has 6 battleships placed randomly on the board.
+
+The player wins the game if all ships are destroyed before running out of missiles.
+
 ## Features 
 
 ### Existing Features
 
-- __Header__
+- Randomly placed battleships
 
-    - The Header displays the games name: ROCK PAPER SCISSORS
+    - The computer battleships are randomly placed on the board
+    - The player cannot see the computer's ships
 
-![Header](https://raw.githubusercontent.com/deagustinchristian/Rock-Paper-Scissors/main/assets/images/readme%20images/header.jpeg)
+![A hit and a miss](https://raw.githubusercontent.com/deagustinchristian/Rock-Paper-Scissors/main/assets/images/readme%20images/header.jpeg)
 
 - __The Game options__
 
@@ -106,13 +115,13 @@ The live link can be found here - https://deagustinchristian.github.io/Rock-Pape
 
 - All text on the website was made up by me. I did use Grammarly on this ReadMe file just so the grammar and spelling was as correct as it could be.
 
-- I have used different sources to learn and understand the coding and the concepts of JS, to better understand the concepts of the game and how to make it I studied the following websites and how they did it.
+- I have used different sources to learn and understand the coding and the concepts of Python, to better understand the concepts of the game and how to make it I studied the following websites and how they did it.
 
-    - The linear gradient effect code I got from this website
-        - (https://www.sliderrevolution.com/resources/css-animated-background)
+    - Code Institute - Battleship game
+        - (https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/)
 
-    - This website was really good to get a sense of how the game is built
-        - (https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/)
+    - This Youtube channel was really good to get a sense of how the game is built
+        - (https://www.youtube.com/watch?v=tF1WRCrd_HQ&t=0s)
     
     - I used code from this website for the compareInput parts and also for the game-ending when the points reach 5
         - (https://sebhastian.com/rock-paper-scissors-javascript/)
