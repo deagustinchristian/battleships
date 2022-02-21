@@ -6,7 +6,7 @@ Players can try to beat the computer by destroying the computers battleships bef
 
 [Here is the live version of my game](https://cda-battleships.herokuapp.com/)
 
-![Looking good on different devices](https://raw.githubusercontent.com/deagustinchristian/Rock-Paper-Scissors/main/assets/images/readme%20images/Responsive%20design%20image.jpeg)
+![Looking good on different devices](https://raw.githubusercontent.com/deagustinchristian/battleships/main/assets/images/terminal.png)
 
 ## Features 
 
