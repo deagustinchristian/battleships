@@ -4,7 +4,7 @@ Battleships is a Python terminal game, which runs via my mock terminal on Heroku
 
 Players can try to beat the computer by destroying the computers battleships before running out of missiles. Players start with 15 missiles and the computer has randomly placed 6 battleships. Each battleship occupies one square on the board.
 
-![Here is the live version of my game](https://cda-battleships.herokuapp.com/)
+[Here is the live version of my game](https://cda-battleships.herokuapp.com/)
 
 ![Looking good on different devices](https://raw.githubusercontent.com/deagustinchristian/Rock-Paper-Scissors/main/assets/images/readme%20images/Responsive%20design%20image.jpeg)
 
