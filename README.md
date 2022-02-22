@@ -38,6 +38,9 @@ The player wins the game if all ships are destroyed before running out of missil
 
 ![Same try twice](https://raw.githubusercontent.com/deagustinchristian/battleships/main/assets/images/sametrytwice.jpeg)
 
+- Game asks player if they wish to try again
+
+![Wanna try again](https://raw.githubusercontent.com/deagustinchristian/battleships/main/assets/images/sametrytwice.jpeg)
 
 ### Features Left to Implement
 
