@@ -79,7 +79,7 @@ class Ships:
 
 def new_game():
     computer_board = Board([[" "] * 5 for i in range(5)])
-    player_guess_board = Board([[" "] * 5 for i in range(5)])
+    player_board = Board([[" "] * 5 for i in range(5)])
     Ships.create_ships(computer_board)
 
     missiles = 15
@@ -92,24 +92,25 @@ def new_game():
     print("≈" * 30)
 
     while missiles > 0:
-        Board.print_board(player_guess_board)
+        Board.print_board(player_board)
 
         # Gets the player input and checks so not duplicate
         player_x_row, player_y_column = Ships.get_player_input(object)
 
-        while player_guess_board.board[player_x_row][player_y_column] == "-" or player_guess_board.board[player_x_row][player_y_column] == "X":
+        while player_board.board[player_x_row][player_y_column] == "-" or\
+                player_board.board[player_x_row][player_y_column] == "X":
             print("You tried this one already!")
             player_x_row, player_y_column = Ships.get_player_input(object)
 
         # checks if its a hit or a miss
         if computer_board.board[player_x_row][player_y_column] == "X":
             print("You sunk one of my battleships!")
-            player_guess_board.board[player_x_row][player_y_column] = "X"
+            player_board.board[player_x_row][player_y_column] = "X"
         else:
             print("You missed!")
-            player_guess_board.board[player_x_row][player_y_column] = "-"
+            player_board.board[player_x_row][player_y_column] = "-"
 
-        if Ships.sunk_ships(player_guess_board) == 6:
+        if Ships.sunk_ships(player_board) == 6:
             print("You sunk all 6 battleships! You won the game!")
             break
         else:
@@ -117,7 +118,7 @@ def new_game():
             print(f"You have {missiles} missiles left")
             if missiles == 0:
                 print("You ran out of missiles, the bad guys got away!")
-                Board.print_board(player_guess_board)
+                Board.print_board(player_board)
                 break
 
     restart = input("Do you want to try again? (Y/N)").upper()
