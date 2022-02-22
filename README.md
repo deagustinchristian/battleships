@@ -40,7 +40,7 @@ The player wins the game if all ships are destroyed before running out of missil
 
 - Game asks player if they wish to try again
 
-![Wanna try again](https://raw.githubusercontent.com/deagustinchristian/battleships/main/assets/images/sametrytwice.jpeg)
+![Wanna try again](https://raw.githubusercontent.com/deagustinchristian/battleships/main/assets/images/Endgame.jpeg)
 
 ### Features Left to Implement
 
@@ -72,10 +72,10 @@ I have manually tested this game by doing the following:
 
 - PEP8
 
-![PEP8](https://raw.githubusercontent.com/deagustinchristian/Rock-Paper-Scissors/main/assets/images/readme%20images/Lighthouse%20RPS%20game.jpeg)
+![PEP8](https://raw.githubusercontent.com/deagustinchristian/battleships/main/assets/images/PEP8.jpeg)
 
 ###  Bugs
-- When I first ran my code through PEP8 I almost fainted, a lot of indentation mistakes and too long code
+- When I first ran my code through PEP8 I almost fainted, a lot of indentation mistakes and too long code I eventually had to rename player_guess_board to just player_board for PEP8 to accept it
 
 - I had issues with how to shorten the code but learned that () can help shorten the code without affecting it
 
@@ -107,13 +107,17 @@ This project was deployed using Code Institute´s mock terminal for Heroku.
     - Code Institute - Battleship game video.
         - (https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/)
 
+
     - I got the idea of using letters instead of numbers for the columns from this persons Github and used part of his code for it.
         - (https://github.com/dmoisset/battleship-dojo/blob/master/battleship.py)
 
+
     - This Youtube channel was really good to get a sense of how the game can be built and very good explanations on how everything works, I built the game after following his steps.
         - (https://www.youtube.com/watch?v=tF1WRCrd_HQ&t=0s)
-    
+
+
     - I learned more about Python Classes via W3Scools.
         - (https://www.w3schools.com/python/python_classes.asp)
+
 
     - My mentor showed me how to shorten code without breaking it.
