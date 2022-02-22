@@ -61,11 +61,11 @@ I used a class as my model because that's what I first saw in the Code Institute
 
 I have manually tested this game by doing the following:
 
-- Passed the code through PEP8 and confirmed there are no problems with the code
+- Passed the code through PEP8 and confirmed there are no problems with the code.
 
-- Given invalid inputs, numbers where it asked for letters and letters when the game asks for numbers, same input twice
+- Given invalid inputs, numbers where it asked for letters and letters when the game asks for numbers, same input twice and also tried just hitting enter without adding any input.
 
-- Tested the game both in my local terminal and the Code Institute Heroku terminal
+- Tested the game both in my local terminal and the Code Institute Heroku terminal.
 
 
 ### Validator Testing 
@@ -75,7 +75,7 @@ I have manually tested this game by doing the following:
 ![PEP8](https://raw.githubusercontent.com/deagustinchristian/battleships/main/assets/images/PEP8.jpeg)
 
 ###  Bugs
-- When I first ran my code through PEP8 I almost fainted, a lot of indentation mistakes and too long code I eventually had to rename player_guess_board to just player_board for PEP8 to accept it
+- When I first ran my code through PEP8 I almost fainted, a lot of indentation mistakes and too long code, I eventually had to rename player_guess_board to just player_board for PEP8 to accept it
 
 - I had issues with how to shorten the code but learned that () can help shorten the code without affecting it
 
